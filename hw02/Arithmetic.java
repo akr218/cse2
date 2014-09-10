@@ -49,8 +49,8 @@ System.out.println("The total cost of envelopes was $"+
     (nEnvelopes * envelopeCost$)+" plus a sales tax of $"+
     (nEnvelopes * envelope2Cost$ * taxPercent));
 System.out.println("The total cost of purchases before tax was $"+ 
-    (nSocks * sock2Cost$ + nGlasses * glass2Cost$ + 
-    nEnvelopes * envelope2Cost$));
+    (nSocks * sockCost$ + nGlasses * glassCost$ + 
+    nEnvelopes * envelopeCost$));
 System.out.println("The total actually paid including tax was $"+ 
     (nGlasses * glass2Cost$ + nGlasses * glass2Cost$ * taxPercent 
     + nSocks * sock2Cost$ + nSocks * sock2Cost$ * taxPercent + 
