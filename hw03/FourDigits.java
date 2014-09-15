@@ -10,7 +10,7 @@
     
 import java.util.Scanner;
 
-public class Root {
+public class FourDigits {
     //main method required for every program
     public static void main(String[] args) {
         
@@ -18,20 +18,17 @@ public class Root {
         Scanner myScanner;
         myScanner = new Scanner(System.in);
         
-    System.out.print(
-        "Enter the number of Big Macs (an integer > 0): ");
-        int nBigMacs=myScanner.nextInt();
+    System.out.print("Enter a number and I display the four digits to the right of the decimal point:");
+    int y = 0;
+    y = myScanner.nextInt();
+   
+    double FourDigits = 0;
+    myScanner.nextDouble();
+    int FourDigits1= y*10000
+    
+    
+    System.out.println("The four digits to the right of the decimal point are:"+FourDigits1);
         
-    System.out.print(
-        "Enter the cost per BigMac as" +
-        "a double in the form xx.xx");
-        double bigMac$ = myScanner.nextDouble();
-	System.out.print(
-        "Enter the percent tax as a whole number (xx): ");
-        double taxRate = myScanner.nextDouble();
-        taxRate/=100; //user enters percent, but I want
-        //proportion
         
-    System.out.println("Enter a number and I will display four digits
-        to the right of the decimal point:"Enter a number and I will display four digits
-        to the right of the decimal point:");
+            }//end of main method
+        }//end of class
