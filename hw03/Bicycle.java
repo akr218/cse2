@@ -21,12 +21,12 @@ public class Bicycle{
         
     System.out.print(
         "Enter the number of seconds (an integer >0): ");
-        int nSeconds=0;
-        nSeconds=myScanner.nextInt();
+        double nSeconds=0;
+        nSeconds=myScanner.nextDouble();
     System.out.print(
         "Enter the number of counts (an interger > 0): ");
-        int nCounts=0;
-        nCounts=myScanner.nextInt();  
+        double nCounts=0;
+        nCounts=myScanner.nextDouble();  
     
     double wheelDiameter=27.0; //use this measurement to calculate rotation
     double PI=3.14159; //value for constant of pi
@@ -34,11 +34,16 @@ public class Bicycle{
     double inchesPerFoot=12; //use the conversion rate to calculate distance
     double secondsPerMinute=60; //use this conversion rate to calculate time
    
+;
+    double nHours = nSeconds/360;
+    double Distance = nCounts/nSeconds;
     
-    System.out.println("The distance was "+nSeconds*nCounts+
-    " and took "+nSeconds*60+" minutes.");
-    System.out.println("The average mph was" 
-    +nSeconds*nCounts/nSeconds*60+".");
+    
+    
+    System.out.println("The distance was "+Distance+
+    " miles and took "+nSeconds/60+" minutes.");
+    System.out.println("The average mph was " 
+    +Distance/nHours+".");
 
     } //end of main method
 } //end of class
