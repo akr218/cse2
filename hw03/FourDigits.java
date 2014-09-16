@@ -19,15 +19,15 @@ public class FourDigits {
         myScanner = new Scanner(System.in);
         
     System.out.print("Enter a number and I display the four digits to the right of the decimal point:");
-    int y = 0;
-    y = myScanner.nextInt();
+    double y = 0;
+    y = myScanner.nextDouble();
    
-    double FourDigits = 0;
-    myScanner.nextDouble();
-    int FourDigits1= y*10000
+   
+    double Digits1 = 0;
+    Digits1 = y*10000.0;
+    Digits1%=10000;
     
-    
-    System.out.println("The four digits to the right of the decimal point are:"+FourDigits1);
+    System.out.println("The four digits to the right of the decimal point are: "+ (int) Digits1);
         
         
             }//end of main method
