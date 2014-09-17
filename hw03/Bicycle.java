@@ -36,14 +36,12 @@ public class Bicycle{
    
 ;
     double nHours = nSeconds/360;
-    double Distance = nCounts/nSeconds;
+    double Distance = nCounts*((PI*((wheelDiameter)/12)/5280));
     
-    
-    
-    System.out.println("The distance was "+Distance+
+    System.out.println("The distance was "+(float)Distance+
     " miles and took "+nSeconds/60+" minutes.");
     System.out.println("The average mph was " 
-    +Distance/nHours+".");
+    +(float)(Distance/nHours)*10+".");
 
     } //end of main method
 } //end of class
