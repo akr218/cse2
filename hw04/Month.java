@@ -17,57 +17,63 @@ public class Month {
         //Create a Scanner
         Scanner input = new Scanner(System.in); 
      
-        int year = input.nextInt();
-        //Check if the year is a leap year 
-        boolean isLeapYear = 
-            (year %4 ==0 && year % 100 !=0) || (year%400 == 0);
-            
-    System.print(
+    System.out.print(
         "Enter an integer giving the number of the month (1-12): ");
         int InputMonth = 0;
         InputMonth = input.nextInt();
         
-    if(InputMonth=1) {
+    if(InputMonth == 1) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=2) {
+    else if(InputMonth == 2) {
         System.out.print(
             "Enter the year: ");
         int year = input.nextInt();
-    }
-    if(InputMonth=3) {
+        if(year % 4 == 0) {
+            System.out.println("This month has 28 days.");
+        }
+        else {
+            System.out.println("This month has 29 days.");
+        }
+        }
+    else if(InputMonth == 3) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=4) {
+    else if(InputMonth == 4) {
         System.out.println("This month has 30 days.");
     }
-    if(InputMonth=5) {
+    else if(InputMonth == 5) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=6) {
+    else if(InputMonth == 6) {
         System.out.println("This month has 30 days.");
     }
-    if(InputMonth=7) {
+    else if(InputMonth == 7) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=8) {
+    else if(InputMonth == 8) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=9) {
+    else if(InputMonth == 9) {
         System.out.println("This month has 30 days.");
     }
-    if(InputMonth=10) {
+    else if(InputMonth == 10) {
         System.out.println("This month has 31 days.");
     }
-    if(InputMonth=11) {
+    else if(InputMonth == 11) {
         System.out.println("This month has 30 days.");
     }
-    if(InputMonth=12) {
+    else if(InputMonth == 12) {
         System.out.println("This month has 31 days.");
     }
-    else {
-        System.out.println("You did not eneter an integer.");
-    return; //leaves the program
+    else if(InputMonth>12){
+        System.out.println("You did not eneter an integer between 1 and 12.");
+    }
+    else if(InputMonth == 0) {
+         System.out.println("You did not eneter an integer between 1 and 12.");
+    }
+    else if(InputMonth<0) {
+         System.out.println("You did not eneter an integer between 1 and 12.");
     }
 
         
