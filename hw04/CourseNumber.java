@@ -18,7 +18,7 @@ public class CourseNumber {
         Scanner input = new Scanner(System.in);
         
     System.out.print(
-        "Enter a six-digit number giving the course semester: ");
+        "Enter a six-digit number giving the course semester: "); //Prompt user for Course Number input
     int CourseNumber = input.nextInt();
     
     //Get Digits from Course Number 
@@ -26,7 +26,7 @@ public class CourseNumber {
     FirstFour%=10000;
     int LastTwo = CourseNumber%100;
    
-    
+   //Specify outputs for various input combinations
     if (CourseNumber < 186510) {
         System.out.println("The number was outside the range [186510,201440].");
     }

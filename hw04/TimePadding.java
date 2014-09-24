@@ -22,11 +22,13 @@ public class TimePadding {
             int TimeSec = 0;
             TimeSec = myScanner.nextInt();
         
+        //Calcute time in various measurements 
         int TimeHr = TimeSec/3600;
         int RemainingSeconds = TimeSec % 3600;
         int TimeMin = RemainingSeconds/60;
         int RemainingSeconds1 = RemainingSeconds % 60; 
         
+        //Issue commands for display when integer is a single digit
         if (TimeHr<10 && TimeMin<10 && RemainingSeconds1<10) {
             System.out.println("The time in seconds is 0"+TimeHr+":0"+TimeMin+":0"+RemainingSeconds1+".");
         }

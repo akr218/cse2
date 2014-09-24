@@ -22,18 +22,19 @@ public class IncomeTax {
         double income = 0;
         income = myScanner.nextDouble();
         
-        double Tax1 = income*0.05; //compute tax
-        double TaxRate1 = 5.0; //define tax rate
+        double Tax1 = income*0.05; //compute Tax1
+        double TaxRate1 = 5.0; //define TaxRate
         
-        double Tax2 = income*0.07;
-        double TaxRate2 = 7.0;
-
-        double Tax3 = income*0.12;
-        double TaxRate3 = 12.0;
+        double Tax2 = income*0.07; //compute Tax2
+        double TaxRate2 = 7.0; //define TaxRate2
         
-        double Tax4 = income*0.14;
-        double TaxRate4 = 14.0;
+        double Tax3 = income*0.12; //compute Tax3
+        double TaxRate3 = 12.0; //define TaxRate3
         
+        double Tax4 = income*0.14; //compute Tax4
+        double TaxRate4 = 14.0; //define TaxRate4
+    
+    //Specify outputs for various income input values    
     if(income < 0) {
         System.out.println("You did not enter a positive integer.");
     }

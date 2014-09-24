@@ -20,8 +20,9 @@ public class Month {
     System.out.print(
         "Enter an integer giving the number of the month (1-12): ");
         int InputMonth = 0;
-        InputMonth = input.nextInt();
-        
+        InputMonth = input.nextInt();//introduce scanner
+    
+    //Specify numerical values for various months    
     if(InputMonth == 1) {
         System.out.println("This month has 31 days.");
     }
